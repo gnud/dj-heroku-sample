@@ -80,7 +80,6 @@ WSGI_APPLICATION = 'djtest2.wsgi.application'
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
 db_live_url = os.environ.get('DATABASE_URL')
-print(f'Using live url {db_live_url}')
 
 default_dev = {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -88,10 +87,10 @@ default_dev = {
 }
 
 default = dj_database_url.parse(db_live_url) if db_live_url else default_dev
-print(default)
+
 
 DATABASES = {
-    'default': default_dev
+    'default': default
 }
 
 
