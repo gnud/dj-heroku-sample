@@ -88,6 +88,7 @@ default_dev = {
 }
 
 default = dj_database_url.parse(db_live_url) if db_live_url else default_dev
+print(default)
 
 DATABASES = {
     'default': default_dev
