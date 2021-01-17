@@ -87,6 +87,7 @@ default_dev = {
         'NAME': BASE_DIR / 'db.sqlite3',
 }
 
+# https://github.com/jacobian/dj-database-url
 default = dj_database_url.parse(db_live_url) if db_live_url else default_dev
 
 
@@ -134,6 +135,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
+# https://devcenter.heroku.com/articles/django-assets
 # Simplified static file serving.
 # https://warehouse.python.org/project/whitenoise/
 
