@@ -27,7 +27,10 @@ instance.
 Credentials:
 
 user: root
-pass: Gm4JTT5V6L9cF8g (randomly generated)
+
+pass: Gm4JTT5V6L9cF8g
+
+(randomly generated)
 
 Don't change the password, please or
 
