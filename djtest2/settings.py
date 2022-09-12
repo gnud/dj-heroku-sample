@@ -28,8 +28,9 @@ SECRET_KEY = '*6+j)9*r#k^4-9$9une0_sp)4c#u$d^0srx8jz-r4#ja!)t_gf'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'still-plateau-60549.herokuapp.com',
-    'localhost'
+    '.vercel.app',
+    '.now.sh',
+    'localhost',
 ]
 
 
